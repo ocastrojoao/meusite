@@ -1,4 +1,10 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { Button, Container, Box, Link, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
+
 
 
 
@@ -39,6 +45,55 @@ const Page = () => {
                     />
                 </Box>
             </Box>
+        <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+        Work
+        
+        </Heading>
+        <Paragraph>Sou um desenvolvedor freelancer apaixonado por construir aplicações web.
+            Tenho alguns projetos em andamento e trabalho na intenção de resolver problemas
+            e encontrar soluções digitais para modernizar seu negócio.
+            </Paragraph>
+            <Box align="center" my={4}>
+            <NextLink href="/works">
+                <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                    Meu Portfólio
+                </Button>
+            </NextLink>
+            </Box>    
+        </Section>   
+        <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+            Bio
+        </Heading>
+        <BioSection>
+            <BioYear>
+                1996
+            </BioYear>
+            Nascido no Paraná, Brasil
+        </BioSection>
+
+        <BioSection>
+            <BioYear>
+                2018
+            </BioYear>
+            Início da minha jornada em Brasília
+        </BioSection>
+
+        <BioSection>
+            <BioYear>
+                2020
+            </BioYear>
+            Começo dos estudos em desenvolvimento de software
+        </BioSection>
+
+        <BioSection>
+            <BioYear>
+                2022
+            </BioYear>
+            Início do primeiro projeto para web
+        </BioSection>
+        </Section> 
         </Container>
     )
 }

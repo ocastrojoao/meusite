@@ -1,5 +1,5 @@
 {
-  "name": "joaocastro-homepage",
+  "name": "c",
   "version": "1.0.0",
   "description": "castro's website",
   "scripts": {
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/ocastrojoao/meusite.git"
   },
   "keywords": [],
-  "author": "Joao Castro<hi@ocastrojao>",
+  "author": "Joao Castro <hi@ocastrojao>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ocastrojoao/meusite/issues"
@@ -24,7 +24,7 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.3.1",
+    "framer-motion": "^6.3.3",
     "next": "^12.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -33,5 +33,9 @@
     "eslint": "^8.14.0",
     "eslint-config-next": "^12.1.5",
     "prettier": "^2.6.2"
+  },
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
   }
 }
