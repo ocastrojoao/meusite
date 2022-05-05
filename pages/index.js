@@ -17,7 +17,7 @@ const Page = () => {
             p="3" 
             mb={6} 
             align="center">
-                Olá, eu sou desenvolvedor front end morando em Brasília!
+                Olá, sou desenvolvedor web morando em Brasília!
             </Box>
 
             <Box display={{ md: 'flex' }}>

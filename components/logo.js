@@ -1,22 +1,23 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
-import Styled from '@emotion/styled'
+import styled from '@emotion/styled'
 
-const LogoBox = Styled.span`
+const LogoBox = styled.span`
 font-weight: bold;
 font-size: 18px;
 display: inline-flex;
-align-itens: center;
+align-items: center;
 height: 30px;
-line-height: 2px;
+line-height: 20px;
+padding: 10px;
 
 &:hover img{
     transform: rotate(20deg);
 }
 `
 const Logo = () => {
-    const footPrintImg = `/images/footprintt${useColorModeValue('', '-dark')}.png`
+    const footPrintImg = `/images/icon/1${useColorModeValue('', '-dark')}.png`
 
     return ( 
         <Link href="/">
