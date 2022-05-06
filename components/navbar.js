@@ -27,6 +27,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
                 p={2}
                 bg={active ? 'grassTeal' : undefined}
                 color={active ? '#202023' : inactiveColor}
+                target={target}
+                {...props}
             >
                 {children}
             </Link>
@@ -69,11 +71,11 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <LinkItem href="/Works" path={path}>
+                    <LinkItem href="/works" path={path}>
                         Trabalhos
 
                     </LinkItem>
-                    <LinkItem href="/Posts" path={path}>
+                    <LinkItem href="/posts" path={path}>
                         Posts
                     </LinkItem>
                 </Stack>
@@ -83,7 +85,7 @@ const Navbar = props => {
                     <ThemeToggleButton />
 
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-                        <Menu>
+                        <Menu isLazy id="navbar-menu">
                             <MenuButton
                                 as={IconButton}
                                 icon={<HamburgerIcon />}
@@ -96,13 +98,13 @@ const Navbar = props => {
                                     </MenuItem>
                                 </NextLink>
 
-                                <NextLink href="/Works" passHref>
+                                <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Trabalhos
                                     </MenuItem>
                                 </NextLink>
 
 
-                                <NextLink href="/Posts" passHref>
+                                <NextLink href="/posts" passHref>
                                     <MenuItem as={Link}>Posts
                                     </MenuItem>
                                 </NextLink>
