@@ -78,23 +78,31 @@ const Page = () => {
 
         <BioSection>
             <BioYear>
+                2016
+            </BioYear>
+            I started my studies in accounting sciences at UNASP
+        </BioSection>
+
+        <BioSection>
+            <BioYear>
                 2018
             </BioYear>
-            Início da minha jornada em Brasília
+            I moved to Brasilia and started studying technology on my own
         </BioSection>
 
         <BioSection>
             <BioYear>
                 2020
             </BioYear>
-            Começo dos estudos em desenvolvimento de software
+            I started my studies in software engineering in Brasilia
         </BioSection>
 
         <BioSection>
             <BioYear>
                 2022
             </BioYear>
-            Início do primeiro projeto para web
+            In the year 2022 I started to structure a new web and mobile project.
+            So far we have already decided part of the business rule and what the main features will be.
         </BioSection>
         </Section> 
         </Container>
