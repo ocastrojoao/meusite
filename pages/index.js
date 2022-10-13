@@ -17,7 +17,7 @@ const Page = () => {
             p="3" 
             mb={6} 
             align="center">
-                Olá, sou desenvolvedor web morando em Brasília!
+                Hello, I'm a software developer based in Brazil!
             </Box>
 
             <Box display={{ md: 'flex' }}>
@@ -25,7 +25,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         João Castro
                     </Heading>
-                    <p>(Artesão Digital / Desenvolvedor / Designer )</p>
+                    <p>( Software Analyst/ Developer / Designer )</p>
                 </Box>
                 <Box 
                 flexShrink={0} 
@@ -50,14 +50,17 @@ const Page = () => {
         Work
         
         </Heading>
-        <Paragraph>Sou um desenvolvedor freelancer apaixonado por construir aplicações web.
-            Tenho alguns projetos em andamento e trabalho na intenção de resolver problemas
-            e encontrar soluções digitais para modernizar seu negócio.
+        <Paragraph>I'm a software developer focused on .NET applications! 
+            I worked for 5 years in the financial/accounting area. 
+            I have always enjoyed producing reports and contributing to the
+            financial health of the organization I am a part of. Today I decided to migrate to 
+            technology, understanding that I will continue to contribute effectively, 
+            but now focusing on technological results and creating applications that make work easier.
             </Paragraph>
             <Box align="center" my={4}>
             <NextLink href="/works">
                 <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                    Meu Portfólio
+                    My Portfolio
                 </Button>
             </NextLink>
             </Box>    
@@ -70,7 +73,7 @@ const Page = () => {
             <BioYear>
                 1996
             </BioYear>
-            Nascido no Paraná, Brasil
+            Born in Parana, Brazil
         </BioSection>
 
         <BioSection>
