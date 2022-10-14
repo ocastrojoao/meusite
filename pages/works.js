@@ -10,7 +10,9 @@ const Works = () => {
     return (
         <Container>
             <Heading as="h3" fontSize={20} mb={4}>
-                Trabalhos
+                Projects
+                
+                <p>Here is where I will list my top projects. I usually update for relevance.</p>
             </Heading>
 
             <SimpleGrid columns={[1,1,2]} gap={6}>
