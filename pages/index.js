@@ -25,7 +25,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         João Castro
                     </Heading>
-                    <p>( Software Analyst/ Developer / Designer )</p>
+                    <p>( Software Analyst / Developer / Designer )</p>
                 </Box>
                 <Box 
                 flexShrink={0} 
