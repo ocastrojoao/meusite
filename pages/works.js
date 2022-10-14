@@ -11,9 +11,11 @@ const Works = () => {
         <Container>
             <Heading as="h3" fontSize={20} mb={4}>
                 Projects
-                
-                <p>Here is where I will list my top projects. I usually update for relevance.</p>
+
             </Heading>
+
+            
+            <p>Here is where I will list my top projects. I usually update for relevance.</p>
 
             <SimpleGrid columns={[1,1,2]} gap={6}>
                     <Section>

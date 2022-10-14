@@ -11,13 +11,15 @@ import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
     return (
         <Container>
-            <Box 
-            borderRadius="lg" 
-            bg="{useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}" 
-            p="3" 
-            mb={6} 
-            align="center">
-                Hello, I'm a software developer based in Brazil!
+            <Box
+                borderRadius="lg"
+                mb={6}
+                p={3}
+                textAlign="center"
+                bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+                css={{ backdropFilter: 'blur(10px)' }}
+                    >
+                    Hello, I&apos;m a software developer based in Brazil.
             </Box>
 
             <Box display={{ md: 'flex' }}>
