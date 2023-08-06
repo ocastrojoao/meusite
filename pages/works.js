@@ -24,11 +24,6 @@ const Works = () => {
                             para modernizar seu negócio.
                         </WorkGridItem>
                     </Section>
-                    <Section>
-                        <WorkGridItem id="playlist" title="ApplePlaylist" thumbnail={thumbPlaylist}>
-                            Músicas que uso para estudar e trabalhar. Curta a playlist e envie dicas de músicas.
-                        </WorkGridItem>
-                    </Section>
             </SimpleGrid>
         </Container>
     )
