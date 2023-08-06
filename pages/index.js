@@ -27,7 +27,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         João Castro
                     </Heading>
-                    <p>( Software Analyst / Developer / Designer )</p>
+                    <p>( Software Analyst / iOS Developer / Front End Developer )</p>
                 </Box>
                 <Box 
                 flexShrink={0} 
@@ -52,7 +52,7 @@ const Page = () => {
         Work
         
         </Heading>
-        <Paragraph>I'm a software developer focused on .NET applications! 
+        <Paragraph>I'm a software developer focused on iOS and .NET applications! 
             I worked for 5 years in the financial/accounting area. 
             I have always enjoyed producing reports and contributing to the
             financial health of the organization I am a part of. Today I decided to migrate to 
