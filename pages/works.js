@@ -2,7 +2,6 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import thumbBeehive from '../public/images/beehive.png'
-import thumbPlaylist from '../public/images/applemusic.png'
 
 
 
