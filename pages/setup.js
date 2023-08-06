@@ -1,6 +1,5 @@
-import { Box, Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Box, Container, Heading } from '@chakra-ui/react'
 import Section from '../components/section'
-import Link from 'next/link'
 
 
 const Setup = () => {
