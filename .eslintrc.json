@@ -1,11 +1,13 @@
 {
-    "root": true,
-    "extends": "next",
-    "rules": {
-        "error":
-        {
-            "argsIgnorePattern": "^_",
-            "varsIgonrePattern": "^_"
-        }
-    }
+  "root": true,
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ]
+  }
 }
