@@ -1,14 +1,13 @@
 // pages/works/[id].js
 
-import { Container, Badge, Link, List, ListItem, Heading } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work' // Precisaremos criar esses componentes
+// Vamos supor que você criou esses componentes simples para estilização
+import { Title, WorkImage, Meta } from '../../components/work' 
 import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article' // Se você tiver um componente de layout
 
 const Work = () => {
     return (
-        // <Layout title="Beehive"> // Se tiver um layout
         <Container>
             <Title>
                 Beehive <Badge>2025</Badge>
@@ -35,11 +34,38 @@ const Work = () => {
             </List>
 
             <WorkImage src="/images/beehive.png" alt="Beehive" />
-            <WorkImage src="/images/beehive_02.png" alt="Beehive" /> // Adicione mais imagens
+            {/* <WorkImage src="/images/beehive_02.png" alt="Beehive" /> */}
 
         </Container>
-        // </Layout>
     )
 }
 
 export default Work
+
+// ========= ADICIONE ESTAS DUAS FUNÇÕES NO FINAL DO ARQUIVO =========
+
+// Esta função diz ao Next.js quais rotas/páginas ele deve gerar no build
+export async function getStaticPaths() {
+  return {
+    paths: [
+      // Aqui listamos todos os seus projetos.
+      // O 'id' deve ser o mesmo nome que você usa no WorkGridItem
+      { params: { id: 'beehive' } } 
+      // Quando tiver um novo projeto, adicione aqui:
+      // { params: { id: 'meu-novo-projeto' } }
+    ],
+    // fallback: false significa que qualquer rota não listada aqui resultará em uma página 404
+    fallback: false 
+  }
+}
+
+// Esta função busca os dados para CADA página gerada acima
+export async function getStaticProps() {
+  // No futuro, você pode buscar dados de um banco de dados ou API aqui
+  // usando o 'params.id' para saber qual projeto buscar.
+  // Por enquanto, como o conteúdo é estático no próprio componente,
+  // podemos apenas retornar props vazias.
+  return {
+    props: {}
+  }
+}
