@@ -19,7 +19,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Footer from '../components/footer' // ADICIONADO
 
 // ADICIONADO - Imports dos ícones das tecnologias
-import { SiPython, SiPowerbi, SiReact, SiSwift, SiDotnet } from 'react-icons/si'
+import { SiPython, SiPowerbi, SiReact, SiSwift, SiDotnet, SiDatabricks, SiFlutter } from 'react-icons/si'
 
 
 const Page = () => {
@@ -33,7 +33,7 @@ const Page = () => {
                 bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                 css={{ backdropFilter: 'blur(10px)' }}
                     >
-                Hello, I&apos;m a software developer based in Brazil.
+                Hello, I&apos;m a software developer and Data Analyst based in Brazil.
             </Box>
 
             <Box display={{ md: 'flex' }}>
@@ -41,7 +41,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         João Castro
                     </Heading>
-                    <p>( Data Analyst / Mobile Developer / Data Engineer )</p>
+                    <p>( Data Analyst / Mobile Developer )</p>
                 </Box>
                 <Box 
                 flexShrink={0} 
@@ -85,7 +85,7 @@ const Page = () => {
             {/* ===== SEÇÃO DE TECNOLOGIAS ADICIONADA AQUI ===== */}
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
-                    Tecnologias
+                    Technologies
                 </Heading>
                 <SimpleGrid columns={[3, 4, 5]} spacing={6} p={4}>
                     <VStack>
@@ -93,8 +93,8 @@ const Page = () => {
                         <Text fontSize="sm">Python</Text>
                     </VStack>
                     <VStack>
-                        <Icon as={SiPowerbi} w={10} h={10} />
-                        <Text fontSize="sm">Power BI</Text>
+                        <Icon as={SiDatabricks} w={10} h={10} />
+                        <Text fontSize="sm">Databricks</Text>
                     </VStack>
                     <VStack>
                         <Icon as={SiReact} w={10} h={10} />
@@ -105,8 +105,8 @@ const Page = () => {
                         <Text fontSize="sm">Swift</Text>
                     </VStack>
                     <VStack>
-                        <Icon as={SiDotnet} w={10} h={10} />
-                        <Text fontSize="sm">.NET</Text>
+                        <Icon as={SiFlutter} w={10} h={10} />
+                        <Text fontSize="sm">Flutter</Text>
                     </VStack>
                 </SimpleGrid>
             </Section>
@@ -115,6 +115,8 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Bio
                 </Heading>
+                
+                {/* A estrutura agora é BioSection envolvendo BioYear e o texto */}
                 <BioSection>
                     <BioYear>1996</BioYear>
                     Born in Parana, Brazil
