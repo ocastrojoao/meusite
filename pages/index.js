@@ -1,4 +1,7 @@
+// pages/index.js
+
 import NextLink from 'next/link'
+import dynamic from 'next/dynamic' // ADICIONADO para o modelo 3D
 import { 
     Button, 
     Container, 
@@ -7,26 +10,37 @@ import {
     Heading, 
     Image, 
     useColorModeValue,
-    SimpleGrid,   // ADICIONADO
-    Icon,         // ADICIONADO
-    VStack,       // ADICIONADO
-    Text          // ADICIONADO
+    SimpleGrid,
+    Icon,
+    VStack,
+    Text
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import Footer from '../components/footer' // ADICIONADO
+import Footer from '../components/footer'
 
-// ADICIONADO - Imports dos ícones das tecnologias
-import { SiPython, SiPowerbi, SiReact, SiSwift, SiDotnet, SiDatabricks, SiFlutter } from 'react-icons/si'
+import { SiPython, SiDatabricks, SiReact, SiSwift, SiFlutter } from 'react-icons/si'
+
+// ADICIONADO - Carrega o componente 3D de forma dinâmica
+const Modelo3D = dynamic(() => import('../components/modelo-3d'), {
+    ssr: false,
+    loading: () => <Box h="300px" w="100%" display="flex" alignItems="center" justifyContent="center"><Text>Loading...</Text></Box>
+})
 
 
 const Page = () => {
     return (
         <Container>
+            {/* ADICIONADO - Box para o modelo 3D */}
+            <Box h="300px" my={-20} mb={-10}>
+              <Modelo3D />
+            </Box>
+
             <Box
                 borderRadius="lg"
+                mt={20} // Adicionado um margin-top para dar espaço ao modelo
                 mb={6}
                 p={3}
                 textAlign="center"
@@ -82,7 +96,6 @@ const Page = () => {
                 </Box>     
             </Section>
 
-            {/* ===== SEÇÃO DE TECNOLOGIAS ADICIONADA AQUI ===== */}
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
                     Technologies
@@ -115,8 +128,6 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Bio
                 </Heading>
-                
-                {/* A estrutura agora é BioSection envolvendo BioYear e o texto */}
                 <BioSection>
                     <BioYear>1996</BioYear>
                     Born in Parana, Brazil
@@ -151,7 +162,6 @@ const Page = () => {
                 </BioSection>
             </Section>
             
-            {/* ===== FOOTER ADICIONADO AQUI ===== */}
             <Footer />
 
         </Container>
