@@ -18,26 +18,20 @@ padding: 10px;
 `
 const Logo = () => {
     const footPrintImg = `/images/icon/1${useColorModeValue('', '-dark')}.png`
-
-    return ( 
+    return (
         <Link href="/">
-            <a>
-                <LogoBox>
-                    <Image src={footPrintImg} width={20} height={20} alt="logo" />
-                    <Text
-                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                         fontFamily='M PLUS Rounded 1c", sans-serif'
-                         fontWeight="bold"
-                         ml={3}
-                       >
-                         João Castro
-                         </Text>
-
-                </LogoBox>
-            </a>
+            <LogoBox>
+                <Image src={footPrintImg} width={20} height={20} alt="logo" />
+                <Text
+                    color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                    fontFamily="'M PLUS Rounded 1c', sans-serif" // <--- Correção aqui
+                    fontWeight="bold"
+                    ml={3}
+                >
+                    João Castro
+                </Text>
+            </LogoBox>
         </Link>
-
-    ) 
+    )
 }
-
 export default Logo

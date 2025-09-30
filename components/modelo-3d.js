@@ -20,7 +20,7 @@ const Modelo3D = () => {
         <Canvas camera={{ position: [0, 0, 10], fov: 25 }}>
             <Suspense fallback={null}>
                 {/* O Stage cria uma iluminação de estúdio perfeita para exibir um objeto */}
-                <Stage sunset ="city" intensity={0.6}>
+                <Stage environment="city" intensity={0.6}> 
                     <Modelo />
                 </Stage>
             </Suspense>
