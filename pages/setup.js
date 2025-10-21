@@ -31,19 +31,23 @@ const Setup = () => {
             <List spacing={2}>
                 <ListItem>
                     <ListIcon as={CheckCircleIcon} color="green.500" />
-                    <Link href="#" isExternal color={linkColor}>Laptop</Link> - MacBook Air 13 inch 2017
+                    <Link href="https://www.mercadolivre.com.br/notebook-dell-156-fhd-i5-8gb-512gb-ssd-rtx-3050/p/MLB41533294?pdp_filters=item_id%3AMLB5812053522&from=gshop&matt_tool=59181783&matt_internal_campaign_id=&matt_word=&matt_source=google&matt_campaign_id=22117558002&matt_ad_group_id=172644201519&matt_match_type=&matt_network=g&matt_device=c&matt_creative=728942948124&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735125422&matt_product_id=MLB41533294-product&matt_product_partition_id=2389933078298&matt_target_id=aud-1967669456294:pla-2389933078298&cq_src=google_ads&cq_cmp=22117558002&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22117558002&gclid=CjwKCAjw3tzHBhBREiwAlMJoUpHCJlkB0ZMagW_iva4Y_t5teO6Yel1M8PFidj4WtWNU7Y9uf1qLghoC2psQAvD_BwE"
+                     isExternal color={linkColor}>Laptop</Link> - Dell G15 Core I7 RTX 3050
                 </ListItem>
                 <ListItem>
                     <ListIcon as={CheckCircleIcon} color="green.500" />
-                    <Link href="#" isExternal color={linkColor}>Mouse</Link> - Logitech G903
+                    <Link href="https://www.mercadolivre.com.br/mouse-para-jogos-sem-fio-logitech-g903-hero-16k-com-sensor/p/MLB36460394?pdp_filters=item_id%3AMLB4130643605&from=gshop&matt_tool=52490821&matt_internal_campaign_id=&matt_word=&matt_source=google&matt_campaign_id=22090354547&matt_ad_group_id=173090629916&matt_match_type=&matt_network=g&matt_device=c&matt_creative=727882734891&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735125422&matt_product_id=MLB36460394-product&matt_product_partition_id=2389848360845&matt_target_id=aud-1967669456294:pla-2389848360845&cq_src=google_ads&cq_cmp=22090354547&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22090354547&gclid=CjwKCAjw3tzHBhBREiwAlMJoUlWj4UalC6BtWB-uY30EbGGWtjRH-2O8pATQCOybm97fWeip0BvxhxoCl4IQAvD_BwE"
+                     isExternal color={linkColor}>Mouse</Link> - Logitech G903
                 </ListItem>
                 <ListItem>
                     <ListIcon as={CheckCircleIcon} color="green.500" />
-                    <Link href="#" isExternal color={linkColor}>Keyboard</Link> - Logitech G512
+                    <Link href="https://www.mercadolivre.com.br/teclado-gamer-redragon-fizz-rgb-mecnico-switch-marrom-abnt2/p/MLB23138650?pdp_filters=item_id:MLB4216639991"
+                     isExternal color={linkColor}>Keyboard</Link> - Redragon fizz
                 </ListItem>
                 <ListItem>
                     <ListIcon as={CheckCircleIcon} color="green.500" />
-                    <Link href="#" isExternal color={linkColor}>Headset</Link> - Logitech H390
+                    <Link href="https://www.mercadolivre.com.br/fone-headset-gamer-sem-fio-nomen-pro-h838-pro-redragon-preto-preto/p/MLB53230665?pdp_filters=item_id:MLB5665749810"
+                     isExternal color={linkColor}>Headset</Link> - Redragon Nomen Pro
                 </ListItem>
             </List>
 
