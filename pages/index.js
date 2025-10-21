@@ -24,10 +24,10 @@ import Footer from '../components/footer'
 import { SiPython, SiDatabricks, SiReact, SiSwift, SiFlutter } from 'react-icons/si'
 
 // ADICIONADO - Carrega o componente 3D de forma dinâmica
-const Modelo3D = dynamic(() => import('../components/modelo-3d'), {
-    ssr: false,
-    loading: () => <Box h="300px" w="100%" display="flex" alignItems="center" justifyContent="center"><Text>Loading...</Text></Box>
-})
+//const Modelo3D = dynamic(() => import('../components/modelo-3d'), {
+  //  ssr: false,
+    //loading: () => <Box h="300px" w="100%" display="flex" alignItems="center" justifyContent="center"><Text>Loading...</Text></Box>
+//})
 
 
 const Page = () => {
@@ -35,7 +35,7 @@ const Page = () => {
         <Container>
             {/* ADICIONADO - Box para o modelo 3D */}
             <Box h="300px" my={-20} mb={-10}>
-              <Modelo3D />
+              {/* <Modelo3D /> */}
             </Box>
 
             <Box
