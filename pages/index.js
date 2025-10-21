@@ -80,7 +80,7 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                 Work
                 </Heading>
-                <Paragraph>I'm a software developer focused on python and power BI applications! 
+                <Paragraph>I&apos;m a software developer focused on python and power BI applications! 
                     I worked for 5 years in the financial/accounting area. 
                     I have always enjoyed producing reports and contributing to the
                     financial health of the organization I am a part of. Today I decided to migrate to 
