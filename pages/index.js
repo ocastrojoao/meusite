@@ -33,10 +33,6 @@ import { SiPython, SiDatabricks, SiReact, SiSwift, SiFlutter } from 'react-icons
 const Page = () => {
     return (
         <Container>
-            {/* ADICIONADO - Box para o modelo 3D */}
-            <Box h="300px" my={-20} mb={-10}>
-              {/* <Modelo3D /> */}
-            </Box>
 
             <Box
                 borderRadius="lg"
@@ -66,7 +62,7 @@ const Page = () => {
                     <Image 
                     borderColor="whiteAlpha.800" 
                     borderWidth={2} 
-                    boderStyle="solid" 
+                    borderStyle="solid" 
                     maxWidth="100px" 
                     display="inline-block" 
                     borderRadius="full" 
